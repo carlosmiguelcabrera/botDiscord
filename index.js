@@ -9,7 +9,7 @@ const client = new Client({
 client.setMaxListeners(0);
 
 client.on('guildMemberAdd', (member) => {
-  const channel = member.guild.channels.cache.find(channel => channel.name === '🚀┋bienvenida'); // Reemplaza 'nombre-del-canal' con el nombre del canal donde deseas enviar el mensaje de bienvenida
+  const channel = member.guild.channels.cache.find(channel => channel.name === '🚀┋bienvenida'); // El nombre del canal donde deseas enviar el mensaje de bienvenida
 
   if (!channel) return; // Si no se encuentra el canal, no se enviará el mensaje
 
